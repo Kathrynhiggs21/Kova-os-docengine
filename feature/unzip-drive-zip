@@ -1,0 +1,12 @@
+git fetch origin
+git checkout -b feature/unzip-drive-zip origin/main
+
+mkdir -p .github/workflows
+
+cat > .github/workflows/unzip-drive-zip.yml <<'EOF'
+# (paste the YAML content from above here)
+EOF
+
+git add .github/workflows/unzip-drive-zip.yml
+git commit -m "ci: add workflow to unzip drive zips into drive_import/"
+git push origin feature/unzip-drive-zip
