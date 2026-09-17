@@ -28,6 +28,8 @@ Production domain:
 
 `https://kovaos.com`
 
+Treat this as the canonical production-domain reference for audit and documentation purposes, not as a default hard-coded runtime/configuration value.
+
 The long-term goal is a unified operating layer where KOVA can securely coordinate applications, information, automation, AI models, projects, and user workflows while maintaining clear system boundaries.
 
 # 2. Core Architectural Principle
@@ -941,6 +943,8 @@ Do NOT:
 # 33. Immediate Task
 
 Audit this repository against the full KOVA OS architecture above.
+
+Apply fixes only where repository evidence shows the relevant artifact actually exists in this repository or its active settings. If a workflow, merge rule, branch-protection rule, or deployment path is only inferred, external, archived, or absent, document the finding and recommend the safe next step instead of inventing replacement automation.
 
 Identify and fix, where safely possible:
 
